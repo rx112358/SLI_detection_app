@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>D-Detector</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='assets/favicon.ico') }}" />
+    <!-- Font Awesome icons (free version)-->
+    <script
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet" />
+  </head>
+  <body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a c href="#page-top"
+          ><img src="{{ url_for('static', filename='assets/img/navbar-logo.svg') }}" alt="..."
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          
+          <i class="fas fa-bars ms-1"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+              <li class="nav-item"><a class="nav-link" href="#sli">SLI</a></li>
+            <li class="nav-item"><a class="nav-link" href="#demo">Demo</a></li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#resources">Resources</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead">
+      <div class="container">
+        <div class="masthead-heading">Welcome To D-Detector</div>
+        <!-- <div class="masthead-heading text-uppercase">It's Nice To Meet You</div> -->
+        <a class="btn btn-primary btn-xl text-uppercase" href="#demo"
+          >Try it out!</a
+        >
+      </div>
+    </header>
+    <!-- About-->
+    <section class="page-section" id="sli">
+        <div class="container">
+          <div class="text-center">
+            <h2 class="section-heading text-uppercase">SLI</h2>
+            <h3 class="section-subheading text-muted">
+              Read on to know more!
+            </h3>
+          </div>
+          <ul class="timeline">
+            <li>
+              <div class="timeline-image">
+                <img
+                  class="rounded-circle img-fluid"
+                  src="{{ url_for('static', filename='assets/img/girl_smiling.jpg') }}"
+                  alt="..."
+                />
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  
+                  <h4 class="subheading">What is SLI?</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">
+                    Specific language impairment (SLI) is a communication disorder that interferes with the development of language skills in children who have no hearing loss or intellectual disabilities. SLI can affect a child’s speaking, listening, reading, and writing. SLI is also called developmental language disorder, language delay, or developmental dysphasia. It is one of the most common developmental disorders, affecting approximately 7 to 8 percent of children in kindergarten. The impact of SLI usually persists into adulthood.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <img
+                  class="rounded-circle img-fluid"
+                  src="{{ url_for('static', filename='assets/img/front-cover-child-photo.jpg') }}"
+                  alt="..."
+                />
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                
+                  <h4 class="subheading">What causes it?</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">
+                    The cause of SLI is unknown, but recent discoveries suggest that it has a strong genetic link. Children with SLI are more likely than those without SLI to have parents and siblings who have also had difficulties and delays in speaking. In fact, 50 to 70 percent of children with SLI have at least one family member with the disorder.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-image">
+                <img
+                  class="rounded-circle img-fluid"
+                  src="{{ url_for('static', filename='assets/img/sli_preschoolers.jpg') }}"
+                  alt="..."
+                />
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4 class="subheading">Symptoms</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">
+                    Preschool-aged children with SLI may:
+<ul>
+  <li>Be late to put words together into sentences</li>
+  <li>Struggle to learn new words and make conversation</li>
+  <li>Have difficulty following directions, not because they are stubborn, but because they do not fully understand the words spoken to them</li>
+  <li>Make frequent grammatical errors when speaking</li>
+</ul>
+                    
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <img
+                  class="rounded-circle img-fluid"
+                  src="{{ url_for('static', filename='assets/img/slp.png') }}"
+                  alt="..."
+                />
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                
+                  <h4 class="subheading">Diagnosis</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">
+                    If a doctor, teacher, or parent suspects that a child has SLI, a speech-language pathologist (a professional trained to assess and treat people with speech or language problems) can evaluate the child’s language skills. The type of evaluation depends on the child's age and the concerns that led to the evaluation. In general, an evaluation includes:
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <h4>
+                  Raise
+                  <br />
+                  Awareness
+                  <br />
+                  Now!
+                </h4>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    <!-- Services-->
+    <section class="page-section" id="demo">
+      <div class="container" >
+        <form enctype='multipart/form-data'>
+          <!--  method ="POST" action="/model/prediction" -->
+          <div margin="2%" class="text-center">
+              <input type="file" name="file" id="file"></input>
+          </div>
+          <br>
+          <div margin="2%" class="text-center">
+                <audio id="audio" controls autoplay></audio>
+          </div>
+          <div margin="2%" class="text-center"></div>
+        </form>
+        <div margin="2%" class="text-center">
+        <button class="btn btn-warning" type="submit" onclick="modelPredict()">Upload</button>
+        </div>
+        <div>
+          <div id="filename" margin="2%" class="text-center"></div>
+        </div>
+        <div>        
+          <div id="result" margin="2%" class="text-center">
+        </div>
+          
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio Grid-->
+    <section class="page-section bg-light" id="resources">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">Resources</h2>
+          <!-- <h3 class="section-subheading text-muted">
+            Lorem ipsum dolor sit amet consectetur.
+          </h3> -->
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <!-- Portfolio item 1-->
+            <div class="portfolio-item">
+              <a
+                class="portfolio-link"
+                target="_blank"
+                href="https://www.readingrockets.org/article/specific-language-impairment"
+              >
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fas fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img
+                  class="img-fluid"
+                  src="{{ url_for('static', filename='assets/img/reading.jpg') }}"
+                  alt="..."
+                />
+              </a>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading"> Reading resources</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <!-- Portfolio item 2-->
+            <div class="portfolio-item">
+              <a
+                class="portfolio-link"
+                target="_blank"
+                href="https://www.parentcenterhub.org/resourcelibrary/"
+              >
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fas fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img
+                  class="img-fluid"
+                  src="{{ url_for('static', filename='assets/img/parents.jpg') }}"
+                  alt="..."
+                />
+              </a>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">For the parents</div>
+            
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <!-- Portfolio item 3-->
+            <div class="portfolio-item">
+              <a
+                class="portfolio-link"
+                target="_blank"
+                href="https://do2learn.com/disabilities/CharacteristicsAndStrategies/SpeechLanguageImpairment_Strategies.html"
+              >
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fas fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img
+                  class="img-fluid"
+                  src="{{ url_for('static', filename='assets/img/learning.jpg') }}"
+                  alt="..."
+                />
+              </a>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">Learning resources</div>
+              
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- Contact-->
+    <section class="page-section" id="contact">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">Contact Us</h2>
+          <h3 class="section-subheading text-muted">
+            Doubts about our software? Fill the form below!
+          </h3>
+        </div>
+        <!-- * * * * * * * * * * * * * * *-->
+        <!-- * * SB Forms Contact Form * *-->
+        <!-- * * * * * * * * * * * * * * *-->
+        <!-- This form is pre-integrated with SB Forms.-->
+        <!-- To make this form functional, sign up at-->
+        <!-- https://startbootstrap.com/solution/contact-forms-->
+        <!-- to get an API token!-->
+        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+          <div class="row align-items-stretch mb-5">
+            <div class="col-md-6">
+              <div class="form-group">
+                <!-- Name input-->
+                <input
+                  class="form-control"
+                  id="name"
+                  type="text"
+                  placeholder="Your Name *"
+                  data-sb-validations="required"
+                />
+                <div class="invalid-feedback" data-sb-feedback="name:required">
+                  A name is required.
+                </div>
+              </div>
+              <div class="form-group">
+                <!-- Email address input-->
+                <input
+                  class="form-control"
+                  id="email"
+                  type="email"
+                  placeholder="Your Email *"
+                  data-sb-validations="required,email"
+                />
+                <div class="invalid-feedback" data-sb-feedback="email:required">
+                  An email is required.
+                </div>
+                <div class="invalid-feedback" data-sb-feedback="email:email">
+                  Email is not valid.
+                </div>
+              </div>
+              <div class="form-group mb-md-0">
+                <!-- Phone number input-->
+                <input
+                  class="form-control"
+                  id="phone"
+                  type="tel"
+                  placeholder="Your Phone *"
+                  data-sb-validations="required"
+                />
+                <div class="invalid-feedback" data-sb-feedback="phone:required">
+                  A phone number is required.
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group form-group-textarea mb-md-0">
+                <!-- Message input-->
+                <textarea
+                  class="form-control"
+                  id="message"
+                  placeholder="Your Message *"
+                  data-sb-validations="required"
+                ></textarea>
+                <div
+                  class="invalid-feedback"
+                  data-sb-feedback="message:required"
+                >
+                  A message is required.
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Submit success message-->
+          <!---->
+          <!-- This is what your users will see when the form-->
+          <!-- has successfully submitted-->
+          <div class="d-none" id="submitSuccessMessage">
+            <div class="text-center text-white mb-3">
+              <div class="fw-bolder">Form submission successful!</div>
+              To activate this form, sign up at
+              <br />
+              <a href="https://startbootstrap.com/solution/contact-forms"
+                >https://startbootstrap.com/solution/contact-forms</a
+              >
+            </div>
+          </div>
+          <!-- Submit error message-->
+          <!---->
+          <!-- This is what your users will see when there is-->
+          <!-- an error submitting the form-->
+          <div class="d-none" id="submitErrorMessage">
+            <div class="text-center text-danger mb-3">
+              Error sending message!
+            </div>
+          </div>
+          <!-- Submit Button-->
+          <div class="text-center">
+            <button
+              class="btn btn-primary btn-xl text-uppercase disabled"
+              id="submitButton"
+              type="submit"
+            >
+              Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer py-4">
+      <div class="container">
+        <div class="row align-items-center">
+              Copyright &copy; D-Detector 2022  
+        </div>
+      </div>
+    </footer>
+   
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+    
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+  </body>
+</html>

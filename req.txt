@@ -1,0 +1,7 @@
+sklearn
+tensorflow
+keras
+matplotlib
+seaborn
+librosa
+numpy==1.21

@@ -26,7 +26,7 @@ AUDIO_LENGTH = 3000
 
 app = Flask(__name__)
 
-UPLOAD_FOLDER = '/home/vivo/Desktop/clg_prj/server/audio/upload/' 
+UPLOAD_FOLDER = '/home/vivo/Desktop/clg_prj/SLI_detection_app/audio/upload/' 
 ALLOWED_EXTENSIONS = {'wav'}
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
@@ -55,7 +55,7 @@ def transform_audio(wav_filename):
         audio_buf = audio_buf[0:AUDIO_LENGTH]
         print('CUT New length =', len(audio_buf))
 
-    output_folder ='/home/vivo/Desktop/clg_prj/server/audio/output'
+    output_folder ='/home/vivo/Desktop/clg_prj/SLI_detection_app/audio/output/'
     x = str(str(wav_filename.split('/')[-1]).split('.')[0])+'.pkl'
     p = str(output_folder+'/'+x)
     output_filename = p
@@ -95,10 +95,10 @@ def get_prediction():
             
             try:
                 wav_filename = filename
-                upload_folder ='/home/vivo/Desktop/clg_prj/server/audio/upload/' 
+                upload_folder ='/home/vivo/Desktop/clg_prj/SLI_detection_app/audio/upload/' 
                 try:
                     model=load_model('soundnet_lstm.h5')
-                    output_folder ='/home/vivo/Desktop/clg_prj/server/audio/output/'
+                    output_folder ='/home/vivo/Desktop/clg_prj/SLI_detection_app/audio/output/'
                     transform_audio(upload_folder+wav_filename)
                     x=[]
                     pickle_file_name = str(str(wav_filename.split('/')[-1]).split('.')[0])+'.pkl'
